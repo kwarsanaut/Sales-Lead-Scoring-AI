@@ -236,7 +236,7 @@ if page == "Executive Dashboard":
         st.subheader("Monthly Sales Pipeline")
         
         # Generate monthly data
-        months = pd.date_range(start='2024-01-01', end='2024-12-31', freq='M')
+        months = pd.date_range(start='2024-01-01', end='2024-12-31', freq='ME')
         monthly_pipeline = []
         
         for month in months:
@@ -292,7 +292,7 @@ if page == "Executive Dashboard":
             color='Conversion Rate',
             color_continuous_scale='Viridis'
         )
-        fig_industry.update_xaxis(tickangle=45)
+        fig_industry.update_layout(xaxis_tickangle=45)
         st.plotly_chart(fig_industry, use_container_width=True)
 
 elif page == "Lead Scoring Engine":
@@ -522,7 +522,7 @@ elif page == "Conversion Analytics":
             color_continuous_scale='Viridis'
         )
         
-        fig_source_win.update_xaxis(tickangle=45)
+        fig_source_win.update_layout(xaxis_tickangle=45)
         st.plotly_chart(fig_source_win, use_container_width=True)
     
     # Predictive analytics
@@ -835,8 +835,7 @@ elif page == "ROI Analysis":
             color=benefit_amounts,
             color_continuous_scale='Greens'
         )
-        fig_benefits.update_xaxis(tickangle=45)
-        fig_benefits.update_layout(showlegend=False)
+        fig_benefits.update_layout(xaxis_tickangle=45, showlegend=False)
         
         st.plotly_chart(fig_benefits, use_container_width=True)
     
@@ -859,10 +858,12 @@ elif page == "ROI Analysis":
         secondary_y=True,
     )
     
-    fig_roi_progression.update_xaxes(title_text="Month")
+    fig_roi_progression.update_layout(
+        title_text="ROI Growth & Revenue Impact Over Time",
+        xaxis_title="Month"
+    )
     fig_roi_progression.update_yaxes(title_text="ROI (%)", secondary_y=False)
     fig_roi_progression.update_yaxes(title_text="Revenue Impact ($)", secondary_y=True)
-    fig_roi_progression.update_layout(title_text="ROI Growth & Revenue Impact Over Time")
     
     st.plotly_chart(fig_roi_progression, use_container_width=True)
     
