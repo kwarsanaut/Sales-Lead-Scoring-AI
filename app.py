@@ -1017,6 +1017,6 @@ st.markdown("""
 <div style='text-align: center; color: #666; padding: 20px;'>
     <h4>🎯 Intelligent Sales AI Platform</h4>
     <p>Transforming Sales Performance Through Artificial Intelligence</p>
-    <p><strong>Contact:</strong> sales@intelligentsalesai.com | <strong>Support:</strong> support@intelligentsalesai.com</p>
+    <p><strong>Contact:</strong> kwasrarajab@gmail.com</p>
 </div>
 """, unsafe_allow_html=True)
