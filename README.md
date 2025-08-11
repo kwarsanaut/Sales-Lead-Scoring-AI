@@ -4,6 +4,7 @@
 
 The Intelligent Sales AI Platform is a comprehensive sales optimization solution that leverages artificial intelligence to transform lead scoring, conversion analytics, and sales automation. Built for sales leadership and business stakeholders, this platform delivers measurable ROI through intelligent lead prioritization and automated workflows.
 
+Try : https://sales-lead-scoring-ai.streamlit.app/
 ## 🚀 Key Features
 
 ### Executive Dashboard
@@ -54,8 +55,8 @@ The Intelligent Sales AI Platform is a comprehensive sales optimization solution
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/intelligent-sales-ai.git
-cd intelligent-sales-ai
+git clone https://github.com/kwarsanaut/Sales-Lead-Scoring-AI.git
+cd Sales-Lead-Scoring-AI
 ```
 
 2. Install dependencies:
